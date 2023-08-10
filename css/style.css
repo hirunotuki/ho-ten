@@ -892,7 +892,7 @@ div.div-h4::after {
   margin-top: 2rem;
 }
 #codeArea li::marker {
-  font-family: "ILC-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
   font-weight: 600;
 }
 #codeArea ol.para-ol {
