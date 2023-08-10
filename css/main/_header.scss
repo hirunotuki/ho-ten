@@ -1,0 +1,69 @@
+@use "../variables/index" as var;
+@use "../mixins/index" as mxn;
+
+header.headerArt {
+    width: 100vw;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 120px 0;
+
+    div.headerWrap {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            width: fit-content;
+
+            a {
+                width: fit-content;
+
+                img {
+                    height: 30px;
+                }
+            }
+        }
+
+        nav {
+            width: 45%;
+            min-width: 500px;
+            height: fit-content;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1rem;
+                gap: 2em;
+
+                li {
+                    font: {
+                        family: 'hoten-agenda-one-jpn', 'TsukuAMGothicLStd-B', sans-serif;
+                        weight: 500;
+                    }
+
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+
+    &.whileCode{
+        height: 75px;
+        box-shadow: 0px 0px 12px -6px rgba(var.$clr-main, .6);
+
+        div.headerWrap {
+            height: 60px;
+
+            h1 a img {
+                height: 24px;
+            }
+        }
+    }
+}

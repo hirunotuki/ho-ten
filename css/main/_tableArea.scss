@@ -1,0 +1,100 @@
+@use '../variables/index' as var;
+@use '../mixins/index' as mxn;
+
+div#tableArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #tableOfContent{
+        width: fit-content;
+        min-width: 30%;
+        height: fit-content;
+        max-height: 80%;
+        padding: 30px 30px;
+        overflow-y: scroll;
+        overscroll-behavior-y: contain;
+        border: solid .5px var.$clr-main;
+        backdrop-filter: blur(3px);
+        color: var.$clr-main;
+        $table-FS: clamp(14px, 10px + 0.4167vw, 18px);
+        display: flex;
+        justify-content: center;
+        ol {
+            ol {
+                padding-left: calc(#{$table-FS} * .75);
+
+                @include mxn.responsive('mp') {
+                    padding-left: calc(12px * .75);
+                }
+            }
+
+            %li {
+                font: {
+                    size: $table-FS;
+                    family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
+                    weight: 600;
+                    variant-numeric: lining-nums proportional-nums;
+                }
+
+                line-height: 1.5em;
+                margin-top: .3em;
+
+                @include mxn.responsive('mp') {
+                    font-size: 12px;
+                }
+
+                a {
+                    background-color: rgba(var.$clr-bg, .15);
+                    backdrop-filter: blur(1.2px);
+
+                    @include mxn.responsive('mp') {
+                        all: unset;
+                    }
+
+                    &:hover {
+                        color: #757173;
+                    }
+                }
+
+                span.tbl-no {
+                    margin: 0 .09em;
+                }
+
+                span[class$="title"] {
+                    display: inline-block;
+                    font-family: 'UDKakugoC70Pro-R', sans-serif;
+                    font-size: .8em;
+                    font-weight: 500;
+
+                    &::before {
+                        content: " – ";
+                        font-weight: 300;
+                        display: inline-block;
+                        height: 100%;
+                    }
+                }
+            }
+
+            li.h20,
+            li.h21,
+            li.h22 {
+                @extend %li;
+                font-size: calc(#{$table-FS} * 1.2);
+
+                @include mxn.responsive('mp') {
+                    font-size: calc(12px * 1.2)
+                }
+            }
+
+            li.h3 {
+                @extend %li;
+            }
+
+            li.h3.short {
+                margin-right: 1em;
+                line-height: 2em;
+                font-weight: 500;
+            }
+        }
+    }
+}

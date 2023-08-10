@@ -1,0 +1,21 @@
+@use '../variables/index' as var;
+@use '../mixins/index' as mxn;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var.$font-size-text-jpn;
+
+    @include mxn.responsive('mp') {
+        font-size: var.$font-size-text-jpn-sp;
+    }
+}
+
+body {
+    margin: 0;
+    color: var.$clr-main;
+    background-color: var.$clr-bg;
+}

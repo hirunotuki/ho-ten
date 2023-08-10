@@ -1,0 +1,19 @@
+@use "../variables/index" as var;
+@use "../mixins/index" as mxn;
+
+#introduction{
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    #firstView{
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: start;
+        position: sticky;
+        top:0;
+    }
+    #tableArea{
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: start;
+    }
+}

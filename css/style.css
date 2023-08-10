@@ -1,0 +1,1016 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+@media screen and (max-width: 559px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  color: #212121;
+  background-color: #ffffff;
+}
+
+.loaderBg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loaderBg .loader {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/logo_inverted.svg);
+  background-size: 150px auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 559px) {
+  .loaderBg .loader {
+    background-size: 105px auto;
+  }
+}
+
+header.headerArt {
+  width: 100vw;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 120px 0;
+}
+header.headerArt div.headerWrap {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.headerArt div.headerWrap h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header.headerArt div.headerWrap h1 a {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header.headerArt div.headerWrap h1 a img {
+  height: 30px;
+}
+header.headerArt div.headerWrap nav {
+  width: 45%;
+  min-width: 500px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+header.headerArt div.headerWrap nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  gap: 2em;
+}
+header.headerArt div.headerWrap nav ul li {
+  font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+}
+header.headerArt.whileCode {
+  height: 75px;
+  box-shadow: 0px 0px 12px -6px rgba(33, 33, 33, 0.6);
+}
+header.headerArt.whileCode div.headerWrap {
+  height: 60px;
+}
+header.headerArt.whileCode div.headerWrap h1 a img {
+  height: 24px;
+}
+
+main.codeMain {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 120px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+main.codeMain div#introduction {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+main.codeMain div#codeAreaContainer {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  scroll-snap-align: start;
+}
+main.codeMain.whileCode {
+  height: calc(100vh - 75px);
+  margin-top: 75px;
+}
+
+#introduction {
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+#introduction #firstView {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  position: sticky;
+  top: 0;
+}
+#introduction #tableArea {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+div#firstView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+div#firstView div#fvTitle {
+  width: 85%;
+}
+div#firstView div#fvTitle h1 {
+  font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
+  font-size: clamp(72px, -6px + 8.13vw, 150px);
+  font-weight: 500;
+  font-feature-settings: "hkna", "palt";
+  font-variant-numeric: lining-nums proportional-nums;
+  text-align: center;
+  word-break: keep-all;
+  line-height: 1.05em;
+  transform: scaleY(0.88);
+  transform-origin: top;
+}
+div#firstView div#fvDateContainer {
+  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
+  font-size: clamp(14px, 10px + 0.4167vw, 18px);
+  font-weight: 500;
+  display: flex;
+  gap: 0;
+}
+@media screen and (max-width: 559px) {
+  div#firstView div#fvDateContainer {
+    font-size: 12px;
+    gap: 0;
+  }
+}
+div#firstView div#fvDateContainer div.fvDate {
+  line-height: 1em;
+}
+div#firstView div#fvDateContainer div.fvDate:nth-child(n+2)::before {
+  content: "／";
+  margin: 1.5em;
+}
+div#firstView div#fvDateContainer div.fvDate h2 {
+  display: inline-block;
+  margin-right: 1em;
+}
+div#firstView div#fvDateContainer div.fvDate p {
+  display: inline-block;
+}
+div#firstView div#fvDateContainer div.fvDate p span {
+  font-size: 2em;
+  font-weight: 700;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
+div#firstView div#fvDateContainer div.fvDate p span.month, div#firstView div#fvDateContainer div.fvDate p span.day {
+  margin-left: 0.25em;
+}
+@media screen and (max-width: 559px) {
+  div#firstView div#fvDateContainer div.fvDate p span {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+}
+
+div#tableArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#tableArea #tableOfContent {
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 80%;
+  padding: 30px 30px;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  border: solid 0.5px #212121;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  color: #212121;
+  display: flex;
+  justify-content: center;
+}
+div#tableArea #tableOfContent ol ol {
+  padding-left: calc(clamp(14px, 10px + 0.4167vw, 18px) * .75);
+}
+@media screen and (max-width: 559px) {
+  div#tableArea #tableOfContent ol ol {
+    padding-left: 9px;
+  }
+}
+div#tableArea #tableOfContent ol li.h3, div#tableArea #tableOfContent ol li.h20,
+div#tableArea #tableOfContent ol li.h21,
+div#tableArea #tableOfContent ol li.h22 {
+  font-size: clamp(14px, 10px + 0.4167vw, 18px);
+  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
+  font-weight: 600;
+  font-variant-numeric: lining-nums proportional-nums;
+  line-height: 1.5em;
+  margin-top: 0.3em;
+}
+@media screen and (max-width: 559px) {
+  div#tableArea #tableOfContent ol li.h3, div#tableArea #tableOfContent ol li.h20,
+  div#tableArea #tableOfContent ol li.h21,
+  div#tableArea #tableOfContent ol li.h22 {
+    font-size: 12px;
+  }
+}
+div#tableArea #tableOfContent ol li.h3 a, div#tableArea #tableOfContent ol li.h20 a,
+div#tableArea #tableOfContent ol li.h21 a,
+div#tableArea #tableOfContent ol li.h22 a {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(1.2px);
+          backdrop-filter: blur(1.2px);
+}
+@media screen and (max-width: 559px) {
+  div#tableArea #tableOfContent ol li.h3 a, div#tableArea #tableOfContent ol li.h20 a,
+  div#tableArea #tableOfContent ol li.h21 a,
+  div#tableArea #tableOfContent ol li.h22 a {
+    all: unset;
+  }
+}
+div#tableArea #tableOfContent ol li.h3 a:hover, div#tableArea #tableOfContent ol li.h20 a:hover,
+div#tableArea #tableOfContent ol li.h21 a:hover,
+div#tableArea #tableOfContent ol li.h22 a:hover {
+  color: #757173;
+}
+div#tableArea #tableOfContent ol li.h3 span.tbl-no, div#tableArea #tableOfContent ol li.h20 span.tbl-no,
+div#tableArea #tableOfContent ol li.h21 span.tbl-no,
+div#tableArea #tableOfContent ol li.h22 span.tbl-no {
+  margin: 0 0.09em;
+}
+div#tableArea #tableOfContent ol li.h3 span[class$=title], div#tableArea #tableOfContent ol li.h20 span[class$=title],
+div#tableArea #tableOfContent ol li.h21 span[class$=title],
+div#tableArea #tableOfContent ol li.h22 span[class$=title] {
+  display: inline-block;
+  font-family: "UDKakugoC70Pro-R", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+div#tableArea #tableOfContent ol li.h3 span[class$=title]::before, div#tableArea #tableOfContent ol li.h20 span[class$=title]::before,
+div#tableArea #tableOfContent ol li.h21 span[class$=title]::before,
+div#tableArea #tableOfContent ol li.h22 span[class$=title]::before {
+  content: " – ";
+  font-weight: 300;
+  display: inline-block;
+  height: 100%;
+}
+div#tableArea #tableOfContent ol li.h20,
+div#tableArea #tableOfContent ol li.h21,
+div#tableArea #tableOfContent ol li.h22 {
+  font-size: calc(clamp(14px, 10px + 0.4167vw, 18px) * 1.2);
+}
+@media screen and (max-width: 559px) {
+  div#tableArea #tableOfContent ol li.h20,
+  div#tableArea #tableOfContent ol li.h21,
+  div#tableArea #tableOfContent ol li.h22 {
+    font-size: 14.4px;
+  }
+}
+div#tableArea #tableOfContent ol li.h3.short {
+  margin-right: 1em;
+  line-height: 2em;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/86b166/00000000000000007735f636/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/86b166/00000000000000007735f636/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/86b166/00000000000000007735f636/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 500;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/a3ad01/00000000000000007735f651/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"), url("https://use.typekit.net/af/a3ad01/00000000000000007735f651/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"), url("https://use.typekit.net/af/a3ad01/00000000000000007735f651/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/b6c406/00000000000000007735f63d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/b6c406/00000000000000007735f63d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/b6c406/00000000000000007735f63d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/90292e/00000000000000007735f61f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"), url("https://use.typekit.net/af/90292e/00000000000000007735f61f/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"), url("https://use.typekit.net/af/90292e/00000000000000007735f61f/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/6f82da/00000000000000007735f623/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/6f82da/00000000000000007735f623/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/6f82da/00000000000000007735f623/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/d7e281/00000000000000007735f64c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/d7e281/00000000000000007735f64c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/d7e281/00000000000000007735f64c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+}
+#codeArea p.para {
+  font-size: 1rem;
+  font-family: "ILC-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
+  font-weight: 400;
+  font-variant-ligatures: normal;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "pkna", "chws";
+  line-height: 2;
+  margin-top: 2em;
+}
+@media screen and (max-width: 559px) {
+  #codeArea p.para {
+    font-feature-settings: "palt";
+    text-align: justify;
+  }
+}
+
+#codeArea h3, #codeArea h2, #codeArea h4 {
+  font-family: "ILC-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+  text-align: center;
+}
+
+#codeAreaContainer {
+  width: 60%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 559px) {
+  #codeAreaContainer {
+    width: initial;
+    margin: 24px 0 0 51px;
+  }
+}
+#codeAreaContainer #codeArea {
+  width: 100%;
+  padding: 0 45px 0 0;
+}
+@media screen and (max-width: 559px) {
+  #codeAreaContainer #codeArea {
+    padding: 0 21px 0 0;
+  }
+}
+
+ol.para-ol::before,
+ul.para-ul::before,
+div.para-uni::before,
+div.div-h4::before {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: calc((1 - 2) * 0.5em);
+  content: "";
+}
+ol.para-ol::after,
+ul.para-ul::after,
+div.para-uni::after,
+div.div-h4::after {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: calc((1 + 2) * 0.5em);
+  content: "";
+}
+
+#codeArea {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 1rem;
+}
+#codeArea > div:first-child > h3:first-child,
+#codeArea > div:first-child > h2:first-child,
+#codeArea > div:first-child > p:first-child,
+#codeArea > div:first-child > ol:first-child,
+#codeArea > div:first-child > li:first-child {
+  margin-top: 0;
+}
+#codeArea p.para::after {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: -1em;
+  content: "";
+}
+#codeArea h4 {
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  margin-top: 2.5rem;
+}
+#codeArea h4::before {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: -0.25em;
+  content: "";
+}
+#codeArea h4::after {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: -0.25em;
+  content: "";
+}
+#codeArea h4 span[class$=title]::before {
+  content: "";
+  margin-left: 0.75em;
+}
+#codeArea h4 + div.div-h4 > h4:first-child {
+  margin-top: 1.5rem;
+}
+#codeArea h3 {
+  text-align: left;
+}
+#codeArea h3 + div.div-h4 > h4:first-child {
+  margin-top: 2rem;
+}
+#codeArea p.para:empty + ol {
+  margin-top: -4rem;
+}
+#codeArea .epiparas {
+  margin-top: 4rem;
+}
+#codeArea li {
+  margin-top: 2rem;
+}
+#codeArea li::marker {
+  font-family: "ILC-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
+  font-weight: 600;
+}
+#codeArea ol.para-ol {
+  list-style-position: inside;
+}
+#codeArea ol.para-ol > li > p.para {
+  display: inline;
+  margin-left: 0.75em;
+}
+#codeArea ol.para-ol > li > .para.block {
+  display: block;
+  margin-left: 0;
+}
+#codeArea ol[class^=subpara],
+#codeArea ul[class^=subpara] {
+  list-style-position: outside;
+  padding-left: 2em;
+}
+@media screen and (max-width: 559px) {
+  #codeArea ol[class^=subpara],
+  #codeArea ul[class^=subpara] {
+    padding-left: 1.5em;
+  }
+}
+#codeArea ol[class^=subpara] li,
+#codeArea ul[class^=subpara] li {
+  padding-left: 0.5em;
+  list-style: "-";
+}
+#codeArea ol.subpara-list-level-00 {
+  padding-left: 3em;
+}
+@media screen and (max-width: 559px) {
+  #codeArea ol.subpara-list-level-00 {
+    padding-left: 2em;
+  }
+}
+#codeArea h2 {
+  font-size: 2rem;
+  line-height: 1em;
+  margin-top: 4rem;
+}
+#codeArea h2 .h2-title {
+  display: block;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+}
+#codeArea h2 + div > h2:first-child {
+  margin-top: 2rem;
+}
+#codeArea h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 3rem;
+}
+#codeArea h3 .h3-title {
+  font-size: 0.75em;
+  display: inline-block;
+}
+#codeArea h3 .h3-title::before {
+  content: "　/　";
+  font-weight: 300;
+}
+#codeArea span.h2-no,
+#codeArea span.h3-no {
+  margin: 0 0.12em;
+  letter-spacing: 0.05em;
+}
+#codeArea span.h2-no {
+  font-weight: 800;
+}
+
+.smcp {
+  font-variant-caps: small-caps;
+  font-variant-numeric: lining-nums;
+}
+
+.c2sc {
+  font-variant-caps: all-small-caps;
+  font-variant-numeric: lining-nums;
+}
+
+ruby[data-ruby] {
+  position: relative;
+}
+ruby[data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 0;
+  font-size: 0.5em;
+  text-align: center;
+  font-family: "TsukuGoPro-B", sans-serif;
+  text-transform: full-size-kana;
+  font-feature-settings: "ruby";
+}
+ruby[data-ruby] rt {
+  display: none;
+}
+
+span.kenten {
+  position: relative;
+}
+span.kenten::before {
+  content: "﹅";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 0;
+  font-size: 0.5em;
+  text-align: center;
+  font-weight: 600;
+  font-family: "toppan-bunkyu-gothic-pr6n", sans-serif;
+}
+
+span.noteHere {
+  font-size: 0.6666666667em;
+  position: relative;
+  font-feature-settings: "halt";
+}
+span.noteHere span.note {
+  display: block;
+  position: absolute;
+  font-size: 0.75rem;
+  font-family: "ILC-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
+  top: 1em;
+  width: -moz-max-content;
+  width: max-content;
+  display: none;
+  font-feature-settings: "halt" 0;
+}
+span.noteHere:hover span.note {
+  display: block;
+}
+
+span.halt {
+  font-feature-settings: "halt";
+}/*# sourceMappingURL=style.css.map */

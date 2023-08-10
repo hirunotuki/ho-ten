@@ -1,0 +1,346 @@
+@use "../variables/index" as var;
+@use "../fonts/index" as font;
+@use '../mixins/index' as mxn;
+
+%para {
+    font: {
+        size: 1rem;
+        family: 'ILC-agenda-one-jpn', 'TsukuGoPr5-D', sans-serif;
+        weight: 400;
+        variant-ligatures: normal;
+        variant-numeric: tabular-nums;
+        feature-settings: "pkna", "chws";
+    }
+
+    line-height: var.$ldng-txt-jpn;
+    margin-top: 2em;
+
+    @include mxn.responsive('mp') {
+        font-feature-settings: "palt";
+        text-align: justify;
+    }
+}
+
+%heading {
+    font: {
+        family: "ILC-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
+        weight: 500;
+    }
+
+    line-height: 1em;
+    text-align: center;
+}
+
+#codeAreaContainer {
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    @include mxn.responsive('mp') {
+        width: initial;
+        margin: 24px 0 0 51px;
+    }
+
+    #codeArea {
+        width: 100%;
+        padding: 0 45px 0 0;
+
+        @include mxn.responsive('mp') {
+            padding: 0 21px 0 0;
+        }
+    }
+
+}
+
+ol.para-ol,
+ul.para-ul,
+div.para-uni,
+div.div-h4 {
+    &::before {
+        display: block;
+        width: 0;
+        height: 0;
+        margin-top: calc((1 - #{var.$ldng-txt-jpn}) * .5em);
+        content: "";
+    }
+
+    &::after {
+        display: block;
+        width: 0;
+        height: 0;
+        margin-bottom: calc((1 + #{var.$ldng-txt-jpn}) * .5em);
+        content: "";
+    }
+}
+
+#codeArea {
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 1rem;
+
+    >div {
+        &:first-child {
+
+            >h3,
+            >h2,
+            >p,
+            >ol,
+            >li {
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+        }
+    }
+
+    p.para {
+        @extend %para;
+
+        &::after {
+            display: block;
+            width: 0;
+            height: 0;
+            margin-bottom: calc((1 - 3) * .5em);
+            content: "";
+        }
+    }
+
+    h4 {
+        @extend %heading;
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        margin-top: 2.5rem;
+
+        &::before {
+            display: block;
+            width: 0;
+            height: 0;
+            margin-bottom: calc((1 - 1.5) * .5em);
+            content: "";
+        }
+
+        &::after {
+            display: block;
+            width: 0;
+            height: 0;
+            margin-bottom: calc((1 - 1.5) * .5em);
+            content: "";
+        }
+
+        span[class$="title"] {
+            &::before {
+                content: "";
+                margin-left: .75em;
+            }
+        }
+
+        +div.div-h4 {
+            >h4 {
+                &:first-child {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+    h3 {
+        text-align: left;
+        +div.div-h4 {
+            >h4 {
+                &:first-child {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    p.para {
+        &:empty {
+            +ol {
+                margin-top: -4rem;
+            }
+        }
+    }
+
+    .epiparas {
+        margin-top: 4rem
+    }
+
+    li {
+        margin-top: 2rem;
+
+        &::marker {
+            font: {
+                family: "ILC-agenda-one-jpn", 'TsukuGoPr5-D', sans-serif;
+                weight: 600;
+            }
+        }
+    }
+
+    ol.para-ol {
+        list-style-position: inside;
+
+        >li {
+            >p.para {
+                display: inline;
+                margin-left: .75em;
+            }
+
+            >.para.block {
+                display: block;
+                margin-left: 0;
+            }
+        }
+    }
+
+    ol,
+    ul {
+        &[class^="subpara"] {
+            list-style-position: outside;
+            padding-left: 2em;
+
+            @include mxn.responsive('mp') {
+                padding-left: 1.5em;
+            }
+
+            li {
+                padding-left: .5em;
+                list-style: "-";
+            }
+        }
+    }
+
+    ol.subpara-list-level-00 {
+        padding-left: 3em;
+
+        @include mxn.responsive('mp') {
+            padding-left: 2em;
+        }
+    }
+
+    h2 {
+        @extend %heading;
+        font-size: 2rem;
+        line-height: 1em;
+        margin-top: 4rem;
+
+        .h2-title {
+            display: block;
+            font-size: .75em;
+            line-height: 1.5em;
+            margin-top: .5em;
+            // @include mxn.lineHeightCrop(1.5);
+        }
+
+        +div {
+            >h2 {
+                &:first-child {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-style: normal;
+        @extend %heading;
+        margin-top: 3rem;
+
+        .h3-title {
+            font-size: .75em;
+            display: inline-block;
+
+            &::before {
+                content: "　/　";
+                font-weight: 300;
+            }
+        }
+    }
+
+    span.h2-no,
+    span.h3-no {
+        margin: 0 .12em;
+        letter-spacing: .05em;
+    }
+
+    span.h2-no {
+        font-weight: 800;
+    }
+}
+
+.smcp {
+    font-variant-caps: small-caps;
+    font-variant-numeric: lining-nums;
+}
+
+.c2sc {
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: lining-nums;
+}
+
+ruby[data-ruby] {
+    position: relative;
+
+    &::before {
+        content: attr(data-ruby);
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+        right: 0;
+        font-size: 0.5em;
+        text-align: center;
+        font-family: "TsukuGoPro-B", sans-serif;
+        text-transform: full-size-kana;
+        font-feature-settings: "ruby";
+    }
+
+    rt {
+        display: none;
+    }
+}
+
+span.kenten {
+    position: relative;
+
+    &::before {
+        content: "﹅";
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+        right: 0;
+        font-size: .5em;
+        text-align: center;
+        font-weight: 600;
+        font-family: "toppan-bunkyu-gothic-pr6n", sans-serif;
+    }
+}
+
+span.noteHere {
+    font-size: calc(1em / 3 * 2);
+    position: relative;
+    font-feature-settings: "halt";
+
+    span.note {
+        display: block;
+        position: absolute;
+        font-size: .75rem;
+        font-family: 'ILC-agenda-one-jpn', 'TsukuGoPr5-D', sans-serif;
+        top: 1em;
+        width: max-content;
+        display: none;
+        font-feature-settings: "halt" 0;
+    }
+
+    &:hover {
+        span.note {
+            display: block;
+        }
+    }
+}
+
+span.halt {
+    font-feature-settings: "halt";
+}
