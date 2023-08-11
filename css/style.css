@@ -467,18 +467,18 @@ header.headerArt div.headerWrap nav ul li {
   line-height: 1em;
   position: relative;
   z-index: 0;
+  text-shadow: 0.6px 0.9px 0 rgba(255, 255, 255, 0.6);
 }
 header.headerArt div.headerWrap nav ul li::before {
   content: "";
   height: 0.8em;
   width: 0;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   bottom: -0.2em;
   left: -0.15em;
   background: #00afcc;
   transition: width 0.15s ease-in-out;
-  mix-blend-mode: color;
 }
 header.headerArt div.headerWrap nav ul li:hover::before {
   width: calc(100% + 0.3em);
@@ -554,10 +554,11 @@ div#firstView div#fvTitle h1 {
   text-align: center;
   word-break: keep-all;
   line-height: 1.05em;
-  transform: scaleY(0.88);
+  transform: translatey(-30px) scaleY(0.88);
   transform-origin: top;
 }
 div#firstView div#fvDateContainer {
+  transform: translatey(-30px);
   font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
   font-size: clamp(14px, 10px + 0.4167vw, 18px);
   font-weight: 500;
@@ -605,9 +606,7 @@ div#tableArea {
   align-items: center;
 }
 div#tableArea #tableOfContent {
-  width: -moz-fit-content;
-  width: fit-content;
-  min-width: 30%;
+  width: 45%;
   height: -moz-fit-content;
   height: fit-content;
   max-height: 80%;
@@ -620,6 +619,7 @@ div#tableArea #tableOfContent {
   color: #212121;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 div#tableArea #tableOfContent ol ol {
   padding-left: calc(clamp(14px, 10px + 0.4167vw, 18px) * .75);
@@ -636,8 +636,8 @@ div#tableArea #tableOfContent ol li.h22 {
   font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
   font-weight: 600;
   font-variant-numeric: lining-nums proportional-nums;
-  line-height: 1.5em;
-  margin-top: 0.3em;
+  line-height: 1em;
+  margin-top: 0.5em;
 }
 @media screen and (max-width: 559px) {
   div#tableArea #tableOfContent ol li.h3, div#tableArea #tableOfContent ol li.h20,
@@ -649,9 +649,7 @@ div#tableArea #tableOfContent ol li.h22 {
 div#tableArea #tableOfContent ol li.h3 a, div#tableArea #tableOfContent ol li.h20 a,
 div#tableArea #tableOfContent ol li.h21 a,
 div#tableArea #tableOfContent ol li.h22 a {
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(1.2px);
-          backdrop-filter: blur(1.2px);
+  line-height: 1em;
 }
 @media screen and (max-width: 559px) {
   div#tableArea #tableOfContent ol li.h3 a, div#tableArea #tableOfContent ol li.h20 a,
@@ -702,8 +700,34 @@ div#tableArea #tableOfContent ol li.h3.short {
   margin-right: 1em;
   line-height: 2em;
   font-weight: 500;
+  display: inline-block;
 }
 
+#tableOfContent li.h20 div.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tableOfContent li.h20 div.toggle {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-left: 0.5em;
+  position: relative;
+}
+#tableOfContent li.h20 div.toggle::before {
+  content: "+";
+  color: #00afcc;
+}
+#tableOfContent li.h20 ol {
+  display: none;
+}
+#tableOfContent li.h20.open {
+  transition: all 0.3s;
+}
+#tableOfContent li.h20.open div.toggle::before {
+  content: "-";
+}
 @font-face {
   font-family: "hoten-agenda-one-jpn";
   font-display: auto;
@@ -911,7 +935,7 @@ div.div-h4::after {
 }
 #codeArea li::marker {
   font-family: "hoten-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 #codeArea ol.para-ol {
   list-style-position: inside;
