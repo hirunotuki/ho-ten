@@ -819,8 +819,8 @@ div#tableArea #tableOfContent ol li.h3.short {
 }
 #codeArea p.para {
   font-size: 1rem;
-  font-family: "hoten-agenda-one-jpn", "IwaOGoPro-Md", sans-serif;
-  font-weight: 400;
+  font-family: "hoten-agenda-one-jpn", "DNPShueiGoGinStd-M", sans-serif;
+  font-weight: 500;
   font-variant-ligatures: normal;
   font-variant-numeric: tabular-nums;
   font-feature-settings: "pkna", "chws";
