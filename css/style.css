@@ -429,6 +429,8 @@ header.headerArt {
   justify-content: center;
   align-items: flex-end;
   padding: 0 120px 0;
+  transition: all 300ms ease-in-out;
+  background: #ffffff;
 }
 header.headerArt div.headerWrap {
   width: 100%;
@@ -436,6 +438,7 @@ header.headerArt div.headerWrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 300ms ease-in-out;
 }
 header.headerArt div.headerWrap h1 {
   width: -moz-fit-content;
@@ -447,6 +450,7 @@ header.headerArt div.headerWrap h1 a {
 }
 header.headerArt div.headerWrap h1 a img {
   height: 30px;
+  transition: all 300ms ease-in-out;
 }
 header.headerArt div.headerWrap nav {
   width: 45%;
@@ -487,12 +491,15 @@ header.headerArt div.headerWrap nav ul li:hover::before {
 header.headerArt.whileCode {
   height: 75px;
   box-shadow: 0px 0px 12px -6px rgba(33, 33, 33, 0.6);
+  transition: all 300ms ease-in-out;
 }
 header.headerArt.whileCode div.headerWrap {
   height: 60px;
+  transition: all 300ms ease-in-out;
 }
 header.headerArt.whileCode div.headerWrap h1 a img {
   height: 24px;
+  transition: all 300ms ease-in-out;
 }
 
 main.codeMain {
@@ -501,6 +508,7 @@ main.codeMain {
   margin-top: 120px;
   overflow-y: scroll;
   scroll-snap-type: y proximity;
+  transition: all 300ms ease-in-out;
 }
 main.codeMain div#introduction {
   width: 100%;
@@ -516,6 +524,7 @@ main.codeMain div#codeAreaContainer {
 main.codeMain.whileCode {
   height: calc(100vh - 75px);
   margin-top: 75px;
+  transition: all 300ms ease-in-out;
 }
 
 #introduction {
@@ -540,7 +549,7 @@ div#firstView {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 0;
 }
 div#firstView div#fvTitle {
   width: 85%;
@@ -810,7 +819,7 @@ div#tableArea #tableOfContent ol li.h3.short {
 }
 #codeArea p.para {
   font-size: 1rem;
-  font-family: "hoten-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "IwaOGoPro-Md", sans-serif;
   font-weight: 500;
   font-variant-ligatures: normal;
   font-variant-numeric: tabular-nums;
