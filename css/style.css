@@ -1181,6 +1181,7 @@ main#collectionMain #collection .card a .wrap div.ovvContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 0.5rem;
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer div.tagArea {
@@ -1226,9 +1227,8 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea d
   font-size: 1.2rem;
   width: -moz-max-content;
   width: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox:nth-child(n+2) {
   position: relative;
