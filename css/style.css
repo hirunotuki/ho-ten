@@ -1272,11 +1272,13 @@ main#collectionMain #collection .card {
   max-width: 270px;
   height: 100%;
   box-shadow: 3px 3px 2px -1px rgba(33, 33, 33, 0.24);
-  transition: box-shadow 180ms ease-in-out;
+  background: none;
+  transition: box-shadow 180ms ease-in-out, background 180ms ease-in-out;
 }
 main#collectionMain #collection .card:hover {
   box-shadow: 3px 3px 9px -2px rgba(0, 175, 204, 0.6);
-  transition: box-shadow 180ms ease-in-out;
+  background: linear-gradient(-45deg, rgba(0, 175, 204, 0.05) 0%, #ffffff 45%);
+  transition: box-shadow 180ms ease-in-out, background 180ms ease-in-out;
 }
 main#collectionMain #collection .card a {
   width: 100%;
@@ -1366,6 +1368,7 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea d
   bottom: 0;
   left: 0;
   writing-mode: vertical-rl;
+  transform: skewY(-9deg);
   font-size: 0.75em;
   font-weight: 500;
   font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
@@ -1373,7 +1376,7 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea d
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDate {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "hoten-agenda-one-jpn", "DNPShueiGoGinStd-M", sans-serif;
   font-variant-numeric: tabular-nums;
   text-align: right;
@@ -1381,5 +1384,4 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea d
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDate span {
   font-size: 1em;
-  letter-spacing: 0.075em;
 }/*# sourceMappingURL=style.css.map */
