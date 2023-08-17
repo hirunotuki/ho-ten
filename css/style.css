@@ -741,6 +741,46 @@ div#tableArea #tableOfContent ol li.h3.short {
   font-family: "hoten-agenda-one-jpn";
   font-display: auto;
   font-style: normal;
+  font-weight: 300;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/f7e219/00000000000000007735f632/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/f7e219/00000000000000007735f632/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/f7e219/00000000000000007735f632/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 300;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/ee2632/00000000000000007735f64d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"), url("https://use.typekit.net/af/ee2632/00000000000000007735f64d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"), url("https://use.typekit.net/af/ee2632/00000000000000007735f64d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/d0b15e/00000000000000007735f637/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/d0b15e/00000000000000007735f637/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/d0b15e/00000000000000007735f637/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/940846/00000000000000007735f631/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/940846/00000000000000007735f631/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/940846/00000000000000007735f631/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn";
+  font-display: auto;
+  font-style: normal;
   font-weight: 500;
   size-adjust: 114%;
   ascent-override: 90%;
@@ -1084,4 +1124,138 @@ span.noteHere:hover span.note {
 
 span.halt {
   font-feature-settings: "halt";
+}
+
+main#collectionMain {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 120px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  transition: all 300ms ease-in-out;
+}
+main#collectionMain #collection {
+  width: 75%;
+  max-width: 1280px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, (100% - 90px - 81px) / 4), 1fr));
+  grid-template-rows: auto;
+  gap: 27px;
+}
+main#collectionMain #collection .card {
+  width: 100%;
+  min-width: 180px;
+  max-width: 270px;
+  height: 100%;
+  box-shadow: 3px 3px 2px -1px rgba(33, 33, 33, 0.24);
+  transition: box-shadow 180ms ease-in-out;
+}
+main#collectionMain #collection .card:hover {
+  box-shadow: 3px 3px 9px -2px rgba(0, 175, 204, 0.6);
+  transition: box-shadow 180ms ease-in-out;
+}
+main#collectionMain #collection .card a {
+  width: 100%;
+  height: 100%;
+}
+main#collectionMain #collection .card a .wrap {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main#collectionMain #collection .card a .wrap h2 {
+  font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.tagArea {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "hoten-agenda-one-jpn", "UDKakugoC70Pro-R", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1em;
+  color: #212121;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.tagArea ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.tagArea ul li {
+  display: inline-block;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.25em;
+  border-radius: 4.5px;
+  background-color: rgba(0, 175, 204, 0.45);
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.tagArea ul li p::before {
+  content: "#";
+  font-weight: 300;
+  margin-right: 0.1em;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox {
+  position: relative;
+  font-size: 1.2rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox:nth-child(n+2) {
+  position: relative;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox:nth-child(n+2)::before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  height: 100%;
+  width: 1.5px;
+  background: #00afcc;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDateIndex {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  writing-mode: vertical-rl;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: "hoten-agenda-one-jpn", sans-serif;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDate {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "hoten-agenda-one-jpn", sans-serif;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  line-height: 1em;
+}
+main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDate span {
+  font-size: 1em;
+  letter-spacing: 0.075em;
 }/*# sourceMappingURL=style.css.map */
