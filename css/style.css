@@ -1245,12 +1245,12 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea d
   writing-mode: vertical-rl;
   font-size: 0.75em;
   font-weight: 500;
-  font-family: "hoten-agenda-one-jpn", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDate {
   font-size: 1em;
-  font-weight: 400;
-  font-family: "hoten-agenda-one-jpn", sans-serif;
+  font-weight: 500;
+  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
   font-variant-numeric: tabular-nums;
   text-align: right;
   line-height: 1em;
