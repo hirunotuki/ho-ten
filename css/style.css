@@ -1173,7 +1173,7 @@ main#collectionMain #collection .card a .wrap {
 }
 main#collectionMain #collection .card a .wrap h2 {
   font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer {
@@ -1190,7 +1190,7 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.tagArea {
   height: -moz-fit-content;
   height: fit-content;
   font-family: "hoten-agenda-one-jpn", "UDKakugoC70Pro-R", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1em;
   color: #212121;
@@ -1249,6 +1249,7 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea d
   font-size: 0.75em;
   font-weight: 500;
   font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
+  line-height: 1em;
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDate {
   font-size: 1em;
