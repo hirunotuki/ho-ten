@@ -857,6 +857,126 @@ div#tableArea #tableOfContent ol li.h3.short {
   unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
   src: url("https://use.typekit.net/af/1763fa/00000000000000007735f64e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff2"), url("https://use.typekit.net/af/1763fa/00000000000000007735f64e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff"), url("https://use.typekit.net/af/1763fa/00000000000000007735f64e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("opentype");
 }
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/f6a624/00000000000000007735f648/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/f6a624/00000000000000007735f648/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/f6a624/00000000000000007735f648/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 300;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/75aa49/00000000000000007735f658/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"), url("https://use.typekit.net/af/75aa49/00000000000000007735f658/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"), url("https://use.typekit.net/af/75aa49/00000000000000007735f658/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/3be6ee/00000000000000007735f625/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/3be6ee/00000000000000007735f625/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/3be6ee/00000000000000007735f625/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/2da67a/00000000000000007735f622/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/2da67a/00000000000000007735f622/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/2da67a/00000000000000007735f622/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/1bbc4d/00000000000000007735f655/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/1bbc4d/00000000000000007735f655/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/1bbc4d/00000000000000007735f655/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 500;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/06904d/00000000000000007735f629/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"), url("https://use.typekit.net/af/06904d/00000000000000007735f629/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"), url("https://use.typekit.net/af/06904d/00000000000000007735f629/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/19411c/00000000000000007735f656/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/19411c/00000000000000007735f656/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/19411c/00000000000000007735f656/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/46e0f7/00000000000000007735f63f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"), url("https://use.typekit.net/af/46e0f7/00000000000000007735f63f/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"), url("https://use.typekit.net/af/46e0f7/00000000000000007735f63f/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/4ea5e4/00000000000000007735f644/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/4ea5e4/00000000000000007735f644/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/4ea5e4/00000000000000007735f644/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/a3b1d9/00000000000000007735f626/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/a3b1d9/00000000000000007735f626/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/a3b1d9/00000000000000007735f626/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 800;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/d3e88d/00000000000000007735f62a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"), url("https://use.typekit.net/af/d3e88d/00000000000000007735f62a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"), url("https://use.typekit.net/af/d3e88d/00000000000000007735f62a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-xcond-jpn";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 800;
+  size-adjust: 114%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-2e, u+30-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/03b9b5/00000000000000007735f63e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff2"), url("https://use.typekit.net/af/03b9b5/00000000000000007735f63e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff"), url("https://use.typekit.net/af/03b9b5/00000000000000007735f63e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("opentype");
+}
 #codeArea p.para {
   font-size: 1rem;
   font-family: "hoten-agenda-one-jpn", "DNPShueiGoGinStd-M", sans-serif;
@@ -1189,9 +1309,9 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.tagArea {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-family: "hoten-agenda-one-jpn", "UDKakugoC70Pro-R", sans-serif;
+  font-family: "hoten-agenda-one-xcond-jpn", "UDKakugoC70Pro-R", sans-serif;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1em;
   color: #212121;
 }
@@ -1254,7 +1374,7 @@ main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea d
 main#collectionMain #collection .card a .wrap div.ovvContainer div.ovvDateArea div.ovvDateBox div.ovvDate {
   font-size: 1em;
   font-weight: 500;
-  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "DNPShueiGoGinStd-M", sans-serif;
   font-variant-numeric: tabular-nums;
   text-align: right;
   line-height: 1em;
