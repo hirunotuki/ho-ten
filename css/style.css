@@ -858,6 +858,46 @@ div#tableArea #tableOfContent ol li.h3.short {
   src: url("https://use.typekit.net/af/1763fa/00000000000000007735f64e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff2"), url("https://use.typekit.net/af/1763fa/00000000000000007735f64e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff"), url("https://use.typekit.net/af/1763fa/00000000000000007735f64e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("opentype");
 }
 @font-face {
+  font-family: "hoten-agenda-one-jpn-mkr";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  size-adjust: 120%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/6f82da/00000000000000007735f623/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/6f82da/00000000000000007735f623/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/6f82da/00000000000000007735f623/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn-mkr";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  size-adjust: 120%;
+  ascent-override: 90%;
+  unicode-range: u+00-27, u+2a-5a, u+5c, u+5e-1fff;
+  src: url("https://use.typekit.net/af/d7e281/00000000000000007735f64c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/d7e281/00000000000000007735f64c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/d7e281/00000000000000007735f64c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn-mkr";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  size-adjust: 120%;
+  ascent-override: 90%;
+  unicode-range: u+28-29;
+  src: url("https://use.typekit.net/af/86b166/00000000000000007735f636/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/86b166/00000000000000007735f636/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/86b166/00000000000000007735f636/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+}
+@font-face {
+  font-family: "hoten-agenda-one-jpn-mkr";
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  size-adjust: 120%;
+  ascent-override: 90%;
+  unicode-range: u+28-29;
+  src: url("https://use.typekit.net/af/a3ad01/00000000000000007735f651/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"), url("https://use.typekit.net/af/a3ad01/00000000000000007735f651/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"), url("https://use.typekit.net/af/a3ad01/00000000000000007735f651/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");
+}
+@font-face {
   font-family: "hoten-agenda-one-xcond-jpn";
   font-display: auto;
   font-style: normal;
@@ -980,10 +1020,11 @@ div#tableArea #tableOfContent ol li.h3.short {
 #codeArea p.para {
   font-size: 1rem;
   font-family: "hoten-agenda-one-jpn", "DNPShueiGoGinStd-M", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-variant-ligatures: normal;
   font-variant-numeric: tabular-nums;
   font-feature-settings: "pkna", "chws";
+  letter-spacing: 0.03em;
   line-height: 2;
   margin-top: 2em;
 }
@@ -1103,7 +1144,7 @@ div.div-h4::after {
   margin-top: 2rem;
 }
 #codeArea li::marker {
-  font-family: "hoten-agenda-one-jpn", "TsukuGoPr5-D", sans-serif;
+  font-family: "hoten-agenda-one-jpn-mkr", "TsukuGoPr5-D", sans-serif;
   font-weight: 700;
 }
 #codeArea ol.para-ol {
@@ -1294,7 +1335,7 @@ main#collectionMain #collection .card a .wrap {
   gap: 1rem;
 }
 main#collectionMain #collection .card a .wrap h2 {
-  font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", "TsukuAMGothicLStd-B", sans-serif;
   font-size: 2rem;
   font-weight: 500;
 }
