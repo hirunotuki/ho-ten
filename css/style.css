@@ -466,7 +466,7 @@ header.headerArt div.headerWrap nav ul {
   gap: 2em;
 }
 header.headerArt div.headerWrap nav ul li {
-  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
   font-weight: 500;
   line-height: 1em;
   position: relative;
@@ -481,7 +481,7 @@ header.headerArt div.headerWrap nav ul li::before {
   z-index: -1;
   bottom: -0.2em;
   left: -0.15em;
-  background: #00afcc;
+  background: rgba(0, 175, 204, 0.6);
   transition: width 0.15s ease-in-out;
 }
 header.headerArt div.headerWrap nav ul li:hover::before {
@@ -568,7 +568,7 @@ div#firstView div#fvTitle h1 {
 }
 div#firstView div#fvDateContainer {
   transform: translatey(-30px);
-  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
   font-size: clamp(14px, 10px + 0.4167vw, 18px);
   font-weight: 500;
   display: flex;
