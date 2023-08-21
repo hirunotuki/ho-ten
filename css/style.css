@@ -374,6 +374,20 @@ th {
   font-weight: bold;
 }
 
+.smcp {
+  font-variant-caps: small-caps;
+  font-variant-numeric: lining-nums;
+}
+
+.c2sc {
+  font-variant-caps: all-small-caps;
+  font-variant-numeric: lining-nums;
+}
+
+.onum {
+  font-variant-numeric: oldstyle-nums;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -468,6 +482,7 @@ header.headerArt div.headerWrap nav ul {
 header.headerArt div.headerWrap nav ul li {
   font-family: "hoten-agenda-one-jpn", "TsukuAMGothicLStd-B", sans-serif;
   font-weight: 500;
+  font-feature-settings: "palt";
   line-height: 1em;
   position: relative;
   z-index: 0;
@@ -475,17 +490,17 @@ header.headerArt div.headerWrap nav ul li {
 }
 header.headerArt div.headerWrap nav ul li::before {
   content: "";
-  height: 0.8em;
+  height: 0.75em;
   width: 0;
   position: absolute;
   z-index: -1;
   bottom: -0.2em;
-  left: -0.15em;
+  left: 0.1em;
   background: rgba(0, 175, 204, 0.6);
   transition: width 0.15s ease-in-out;
 }
 header.headerArt div.headerWrap nav ul li:hover::before {
-  width: calc(100% + 0.3em);
+  width: calc(100% + 0.12em);
   transition: width 0.3s ease-in-out;
 }
 header.headerArt.whileCode {
@@ -519,7 +534,7 @@ main.codeMain div#codeAreaContainer {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  scroll-snap-align: start;
+  scroll-snap-align: none;
 }
 main.codeMain.whileCode {
   height: calc(100vh - 75px);
@@ -1019,7 +1034,7 @@ div#tableArea #tableOfContent ol li.h3.short {
 }
 #codeArea p.para {
   font-size: 1rem;
-  font-family: "hoten-agenda-one-jpn", "DNPShueiGoGinStd-M", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "DNPShueiGoKinStd-L", "DNPShueiGoGinStd-M", sans-serif;
   font-weight: 400;
   font-variant-ligatures: normal;
   font-variant-numeric: tabular-nums;
@@ -1219,16 +1234,6 @@ div.div-h4::after {
   font-weight: 800;
 }
 
-.smcp {
-  font-variant-caps: small-caps;
-  font-variant-numeric: lining-nums;
-}
-
-.c2sc {
-  font-variant-caps: all-small-caps;
-  font-variant-numeric: lining-nums;
-}
-
 ruby[data-ruby] {
   position: relative;
 }
@@ -1335,9 +1340,9 @@ main#collectionMain #collection .card a .wrap {
   gap: 1rem;
 }
 main#collectionMain #collection .card a .wrap h2 {
-  font-family: "hoten-agenda-one-jpn", "TsukuOldGothicStd-B", "TsukuAMGothicLStd-B", sans-serif;
+  font-family: "hoten-agenda-one-jpn", "UDKakugo_SmallPr6N-HV", "TsukuOldGothicStd-B", "TsukuAMGothicLStd-B", sans-serif;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 800;
 }
 main#collectionMain #collection .card a .wrap div.ovvContainer {
   width: 100%;
